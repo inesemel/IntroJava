@@ -67,18 +67,23 @@ public class Main {
 //        double decimalDouble = 5.3748210474929
 
 
+        //Non-numeric primitives
+        // char- characters
+        //boolean- true or false values
+
+
 //        Arithmetic Operators:
         //+ - addition
         System.out.println("Addition of number and value is: " + (number + value));
 
         // - - substraction
-        System.out.println("Addition of number and value is: " + (number - value));
-        // / = division
-        System.out.println("Addition of number and value is: " + (number / value));
-        // * - multiplication
-        System.out.println("Addition of number and value is: " + (number * value));
-        // % - modulus
-        System.out.println("Addition of number and value is: " + (number % value));
+//        System.out.println("Addition of number and value is: " + (number - value));
+//         / = division
+//        System.out.println("Addition of number and value is: " + (number / value));
+//         * - multiplication
+//        System.out.println("Addition of number and value is: " + (number * value));
+//         % - modulus
+//        System.out.println("Addition of number and value is: " + (number % value));
         //A comment is a piece of text in your code that isn't executed by the computer.
 
         //Our first Java program
@@ -86,5 +91,74 @@ public class Main {
         System.out.println("Hello World!");
 
 
+
+        //Task 10 min
+
+//        String gender= "F";
+//
+//        int age= 22;
+//
+//        float height= 1.65;
+//
+//        float weight = 65;
+
+
+        //Type conversion
+
+        //Java allows you tp IMPLICITLY convert from a smaller data type to a bigger one,
+        //but not in the other way round.
+        //For you to convert from bigger to smaller you must do it EXPLICITLY. This is
+        //called CASTING.
+        //smaller --> bigger
+        int five=5;
+        long newValue = five;
+
+        //bigger --> smaller
+        long   six=6;
+        int intValue = (int)six;
+
+        double deciNumber = 6.47395638294;
+        System.out.println("Double value: " + deciNumber);
+        int truncatedValue = (int)deciNumber;
+        System.out.println("Integer version: " + truncatedValue);
+
+
+        boolean bool = true;
+        boolean loob = 8>5;
+
+        //boolean is simply a statement or expression that result in true or false
+
+        //relation operators
+        //>  greater than
+        //<  less then
+        // == equals to
+        // >= greater than or equals to
+        // <= less than equals to
+
+
+       // System.out.println(5==8); //false
+        //System.out.println(9<= 19); //true
+
+
+        //Logical operators:
+        //&& - and operator
+
+       // System.out.println(5<8 && 8<3);
+
+
+        // ||- OR operator
+       // System.out.println(5<8 || 8<3);
+
+        System.out.println(6<9 && 9>2); //true
+
+        System.out.println(5>8 || 8<3); // false
+
+        System.out.println(8==2 && 7<6); // false
+
+
+
     }
 }
+
+
+
