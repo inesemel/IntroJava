@@ -157,6 +157,12 @@ public class Main {
 
 
 
+        // Java Conventions regarding naming
+        //you can't use keywords as name, e.g., you can't use
+        //'int' as a variable name
+        // variables & methods- incrementOne, birdSound, numberOfWings
+        // class - IncrementOne, bIrdSound, NumberOfWings
+
     }
 }
 
