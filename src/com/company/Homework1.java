@@ -3,7 +3,8 @@ package com.company;
 public class Homework1 {
     public static void main(String[] args) {
 
-//        int n ;
+        //Task 1: prime numbers
+
         for (int n = 2; n < 81; n++){
             int x = 0;
             for (int j = n; j >= 1; j--){
@@ -17,6 +18,7 @@ public class Homework1 {
         }
 
 
+        //Task 2: a calculator
         char operator = '^'; // you can change an operator
 
         double a = 25; // you can change numbers
