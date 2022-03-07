@@ -47,6 +47,6 @@ public class Homework2 {
         for (int j=(string4.length()-1); j>=0; j--){
             string5 = string5 + string4.charAt(j);
         }
-        System.out.println(string5);
+        System.out.println(string5.toUpperCase());
     }
 }
