@@ -18,6 +18,11 @@ public class Homework2 {
             System.out.println("The length of the strings is not equal.");
         }
 
+//        if (string1.equals(string2)){
+//            System.out.println("The length of the strings is equal.");
+//        } else{
+//            System.out.println("The length of the strings is not equal.");
+//        }
 
         // Task 2: Write a program to add as many 'r's to 'burp' by using a variable to regulate.
         // For example, if that variable is set to 4, then it will return an output like 'burrrrp'.
@@ -31,6 +36,14 @@ public class Homework2 {
             str1= str1 + "r";
         }
         System.out.println(str.substring(0, 2) + str1 + str.substring(2, str.length()));
+
+//        String rString = ""; //this is going to contain the r's
+//        int rNumber = 4;
+//        for (int k = 0; k < rNumber; k++){
+//            rString+= "r";//rString = rString + "r"; // append r's to the rString
+//        }
+//         System.out.println("bu" + rString + "p");
+
 
         //Task 3: Write a program to remove the first and last letters of a string.
         // e.g. hello becomes ell
@@ -46,6 +59,7 @@ public class Homework2 {
         String string5 = "";
         for (int j=(string4.length()-1); j>=0; j--){
             string5 = string5 + string4.charAt(j);
+//            string5 += string4.charAt(j);
         }
         System.out.println(string5.toUpperCase());
     }
