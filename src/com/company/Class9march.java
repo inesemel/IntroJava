@@ -118,7 +118,7 @@ public class Class9march {
 //                    break;
 //            }
 //        }
-//        System.out.println("The number of viwels is " + counter);
+//        System.out.println("The number of vowels is " + counter);
 
         //
 //        System.out.print("Enter the first one string: ");
