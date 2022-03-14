@@ -45,8 +45,8 @@ public class Homework3 {
             stringTwo = stringTwo + stringOne.charAt(j);
 //            string5 += string4.charAt(j);
         }
-        stringOne.toLowerCase();
-        stringTwo.toLowerCase();
+        stringOne = stringOne.toLowerCase();
+        stringTwo = stringTwo.toLowerCase();
         Boolean boolOne = true;
         int lengthOne = stringOne.length();
         for (int i = 0; i < lengthOne; i++) {
@@ -66,7 +66,7 @@ public class Homework3 {
         System.out.print("Please enter a color red, yellow or blue : ");
         String colorString = scanner.nextLine();
 
-        colorString.toLowerCase();
+        colorString = colorString.toLowerCase();
         switch (colorString){
             case "red":
                 System.out.println("The complimentary color of red is green");
