@@ -22,6 +22,16 @@ public class Homework4 {
 //        int largest = userArr[userArr.length - 1];
 //        System.out.println(largest);
 
+
+//        int maximum = userArr[0];
+//
+//        for (int i = 1; i < userArr.lenght; i++) {
+//            if (maximum < userArr[i]){
+//                maximum = userArr[i]
+//            }
+//        }
+//        System.out.println(maximum);
+
         //Task2:Write a program that accepts a String from the user and
         // returns an array of integers representing the counts of each vowel in the String.
         // The array returned by your method should hold 5 elements: the first is the count of As,
@@ -61,11 +71,40 @@ public class Homework4 {
                     break;
             }
         }
+
+
         vowels[0] = countA;
         vowels[1] = countE;
         vowels[2] = countI;
         vowels[3] = countO;
         vowels[4] = countU;
+
+
+        //or
+
+//        for (int i = 0; i < userInput.length(); i++) {
+//            char currentLet = userInput.toLowerCase().charAt(i);
+////            System.out.println(currentLet);
+//            switch (currentLet) {
+//                case 'a':
+//                    vowels[0]++;
+//                    break;
+//                case 'e':
+//                    vowels[1]++;
+//                    break;
+//                case 'i':
+//                    vowels[2]++;
+//                    break;
+//                case 'o':
+//                    vowels[3]++;
+//                    break;
+//                case 'u':
+//                    vowels[4]++;
+//                    break;
+//                default:
+//                    break;
+//            }
+//        }
 
         System.out.println("The number of vowels a, e, i, o, u in the string " + userInput+" is "+ Arrays.toString(vowels));
 
