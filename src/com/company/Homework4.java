@@ -25,7 +25,7 @@ public class Homework4 {
 
 //        int maximum = userArr[0];
 //
-//        for (int i = 1; i < userArr.lenght; i++) {
+//        for (int i = 1; i < userArr.length; i++) {
 //            if (maximum < userArr[i]){
 //                maximum = userArr[i]
 //            }
