@@ -38,6 +38,25 @@ public class Homework5 {
 //            System.out.println("I can't find Nemo :(" );
 //        }
 
+
+        //Another solution
+//        System.out.print("Please enter a string ");
+//        String userInput = scanner.nextLine();
+//
+//        // break the string up into words
+//        String[] wordArray = userInput.split(" ");
+//
+//        //loop through and find the position of the word 'Nemo'
+//
+//        for (int i = 0; i < wordArray.length; i++) {
+//            if (wordArray[i].equalsIgnoreCase("Nemo")){
+//                System.out.println("I found Nemo at word number " + (i + 1) + "!");
+//                break;
+//            }
+//            if (i == wordArray.length - 1 && !wordArray[i].equalsIgnoreCase("Nemo")){
+//                System.out.println("I can't find Nemo :(");
+//            }
+//        }
         //Task2:Create a program that takes an array and returns the difference between
         // the biggest and smallest numbers.
 
@@ -53,29 +72,64 @@ public class Homework5 {
 //        int difference = userArr[userArr.length - 1] - userArr[0];
 //        System.out.println(difference);
 
+        //Another solution
+
+//        System.out.print("Please enter number of integers you want to use: ");
+//        int intNumber = scanner.nextInt();
+//        int[] numbers = new int[intNumber];
+//        for (int i = 0; i < numbers.length; i++) {
+//            System.out.print("Enter a number: ");
+//            numbers[i] = scanner.nextInt();
+//        }
+//
+//        //this is to ensure that our minimum and maximum correlates with
+//        //our existing dataset
+//
+//        int minimum = numbers[0];
+//        int maximum = numbers[0];
+//
+//        for (int i = 0; i < numbers.length; i++) {
+//            if (maximum < numbers[i]) maximum = numbers[i];
+//
+//            if (minimum > numbers[i]) minimum = numbers[i];
+//        }
+//
+//        System.out.println(Arrays.toString(numbers) + "difference between min and max numbers: " +
+//                (maximum = minimum));
 
         //Task3:Create a program that takes an array of Strings
         // (You can initialize the variable without user input) and checks if the last
         // item matches the rest of the array concatenated together.
         // For example,  ["i", "love", "tesh", "ilovetesh"] will return true
 
-        int arrayLength = 4;
-        String[] words = new String[arrayLength];
-        words[0] = "sister";
-        words[1] = "loves";
-        words[2] = "cats";
-        words[3] = "mysisterlovescats";
-
-        String concatenatedWord = "";
-        for (int i = 0; i < arrayLength - 1; i++) {
-            concatenatedWord = concatenatedWord + words[i];
+//        int arrayLength = 4;
+//        String[] words = new String[arrayLength];
+//        words[0] = "sister";
+//        words[1] = "loves";
+//        words[2] = "cats";
+//        words[3] = "mysisterlovescats";
+//
+//        String concatenatedWord = "";
+//        for (int i = 0; i < arrayLength - 1; i++) {
+//            concatenatedWord = concatenatedWord + words[i];
+//        }
+//
+//        if (concatenatedWord.equals(words[arrayLength - 1])){
+//            System.out.println("The last item matches the rest of the array concatenated together");
+//        } else {
+//            System.out.println("The last item doesn't matches the rest of the array concatenated together");
+//        }
+        // Another solution
+        String[] stringArr = {"i", "love", "tesh", "ilovetesh"};
+        String appender = "";
+        for (int i = 0; i < stringArr.length - 1; i++) {
+            appender += stringArr[i];
         }
+        //Ternary operator
+        // Ternary operator is a conditional that can be used to decide execution
+        //flow on the fly
+        System.out.println(appender.equals(stringArr[stringArr.length - 1]) ? "match" : "don't ,atch");
 
-        if (concatenatedWord.equals(words[arrayLength - 1])){
-            System.out.println("The last item matches the rest of the array concatenated together");
-        } else {
-            System.out.println("The last item doesn't matches the rest of the array concatenated together");
-        }
 
 
 
