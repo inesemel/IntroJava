@@ -117,7 +117,7 @@ public class Homework5 {
 //        if (concatenatedWord.equals(words[arrayLength - 1])){
 //            System.out.println("The last item matches the rest of the array concatenated together");
 //        } else {
-//            System.out.println("The last item doesn't matches the rest of the array concatenated together");
+//            System.out.println("The last item doesn't match the rest of the array concatenated together");
 //        }
         // Another solution
         String[] stringArr = {"i", "love", "tesh", "ilovetesh"};
@@ -128,7 +128,7 @@ public class Homework5 {
         //Ternary operator
         // Ternary operator is a conditional that can be used to decide execution
         //flow on the fly
-        System.out.println(appender.equals(stringArr[stringArr.length - 1]) ? "match" : "don't ,atch");
+        System.out.println(appender.equals(stringArr[stringArr.length - 1]) ? "match" : "don't match");
 
 
 
