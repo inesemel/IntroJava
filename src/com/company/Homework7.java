@@ -2,6 +2,7 @@ package com.company;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.time.temporal.ChronoUnit;
 import java.util.Scanner;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -93,23 +94,53 @@ public class Homework7 {
         //Write a Java program to calculate the difference between two dates in days.
 
 
-        System.out.println();
-        String sDateOne="20/05/2022";
-        String sDateTwo = "25/05/2022";
-        Date dateOne = new SimpleDateFormat("dd/MM/yyyy").parse(sDateOne);
-//        System.out.println(sDateOne+"\t"+date1);
+//        System.out.println();
+//        String sDateOne="20/05/2022";
+//        String sDateTwo = "25/05/2022";
+//        Date dateOne = new SimpleDateFormat("dd/MM/yyyy").parse(sDateOne);
+////        System.out.println(sDateOne+"\t"+date1);
+//
+//
+////        System.out.println(dateOne.getTime());
+//        Date dateTwo=new SimpleDateFormat("dd/MM/yyyy").parse(sDateTwo);
+//
+//        if (dateOne.getTime() > dateTwo.getTime()){
+//            System.out.println("Difference in days is " +
+//                    (dateOne.getTime() - dateTwo.getTime())/1000/60/60/24 + " days");
+//        } else{
+//            System.out.println("Difference in days is " +
+//                    (dateTwo.getTime() - dateOne.getTime())/1000/60/60/24 + " days");
+//        }
 
+        // Another solution
 
-//        System.out.println(dateOne.getTime());
-        Date dateTwo=new SimpleDateFormat("dd/MM/yyyy").parse(sDateTwo);
+//        LocalDate userDateOne = LocalDate.of(2001, Month.JANUARY, 15);
+//        LocalDate userDateTwo = LocalDate.of(2022, Month.DECEMBER, 15);
+//
+//        long numberOfDaysBetween = Math.abs(ChronoUnit.DAYS.between(userDateOne, userDateTwo));
+//        System.out.println("Difference in days is " + numberOfDaysBetween);
 
-        if (dateOne.getTime() > dateTwo.getTime()){
-            System.out.println("Difference in days is " +
-                    (dateOne.getTime() - dateTwo.getTime())/1000/60/60/24 + " days");
-        } else{
-            System.out.println("Difference in days is " +
-                    (dateTwo.getTime() - dateOne.getTime())/1000/60/60/24 + " days");
-        }
+        //Task1:
+        //Write a program to calculate the age of a person, considering that they only enters
+        //their date of birth.
+
+        System.out.print("Enter your date of birth yyyy-mm-dd");
+        String date2 = scanner.next();
+        LocalDate dateOne = LocalDate.now();
+//        LocalDate dateTwo = LocalDate.of(1999, Month.MAY, 25);
+        LocalDate dateTwo = LocalDate.parse(date2);
+        Period difference = Period.between(dateTwo, dateOne);
+        System.out.println("You are " + difference.getYears() +" years old");
+
+        //Task2:
+        //Write a program to calculate the number of days between two specified years.
+
+        LocalDate userDateOne = LocalDate.of(2020, Month.JANUARY, 15);
+        LocalDate userDateTwo = LocalDate.of(2022, Month.JANUARY, 15);
+
+        long numberOfDaysBetween = Math.abs(ChronoUnit.DAYS.between(userDateOne, userDateTwo));
+        System.out.println("Difference in days is " + numberOfDaysBetween);
+
     }
 
 }
