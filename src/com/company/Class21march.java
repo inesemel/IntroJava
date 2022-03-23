@@ -6,6 +6,7 @@ import java.time.LocalTime;
 import java.util.Arrays;
 import java.util.Scanner;
 import java.util.Date;
+import java.time.Month;
 
 public class Class21march {
     public static void main(String[] args) {
@@ -75,26 +76,49 @@ public class Class21march {
         //A leap year is a year with an additional day in it, because of the month of february.
         //Write a program that accepts a year from a user and tells the user if the year is a leap year or not.
 
-        System.out.print("Please enter the year: ");
-        int year = scanner.nextInt();
-        if ((year % 4 == 0) && (year % 100!= 0) || (year % 400 == 0 )){
-            System.out.println(year + " is a leap year");
-        } else{
-            System.out.println(year + " is not a leap year");
-        }
+//        System.out.print("Please enter the year: ");
+//        int year = scanner.nextInt();
+//        if ((year % 4 == 0) && (year % 100!= 0) || (year % 400 == 0 )){
+//            System.out.println(year + " is a leap year");
+//        } else{
+//            System.out.println(year + " is not a leap year");
+//        }
+
+//        System.out.print("Enter a year: ");
+//        int year = scanner.nextInt();
+
+//        boolean isLeap = year % 400 == 0 || year % 4 == 0 && year % 100 != 0;
+
+//        System.out.println(isLeap ? "Leap year" : "not leap year");
+//        boolean isLeap = LocalDate.of(year, Month.DECEMBER, 2).isLeapYear();
+//        System.out.println(isLeap ? "local leap year": "not leap");
 
         //Write a program that returns the number or amount of hours between two (o'clock) times entered by a user.
-        System.out.print("Please enter the first time: ");
-        int timeOne = scanner.nextInt();
-        System.out.print("Please enter the second time: ");
-        int timeTwo = scanner.nextInt();
+        System.out.print("Enter the start hour: ");
+        String userStart = scanner.nextLine(); // 5:00 AM
 
-        if (timeOne < timeTwo){
-            System.out.println("The difference between " + timeTwo + ":00 and " +
-                    timeOne + ":00 is " + (timeTwo - timeOne));
-        }else if (timeOne > timeTwo) {
+        System.out.print("Enter the end hour: ");
+        String userEnd = scanner.nextLine(); // 8:00 AM
 
-        }
+        // Get the value of the hours
+        int startHour = Integer.parseInt(userStart.split(":")[0]);
+        int endHour = Integer.parseInt(userEnd.split(":")[0]);
+
+        System.out.println(startHour);
+        // If a time entered is in the morning assign it 12 else assign it 24
+        // to make it easy to compare numerically.
+        int amPmOne = userStart.split(" ")[1].equals("AM") ? 12 : 24;
+        int amPmTwo = userEnd.split(" ")[1].equals("AM") ? 12 : 24;
+
+        // subtract and find out the difference
+        int difference =(endHour+amPmTwo) - (startHour+amPmOne);
+        if (amPmOne < amPmTwo && startHour > endHour) difference +=12;
+
+
+        System.out.println(difference == 0 ? "No time has passed." : difference + " hours");
+
+
+
 
     }
 }
