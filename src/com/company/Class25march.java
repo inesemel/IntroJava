@@ -63,12 +63,7 @@ public class Class25march {
 //        min = max = freq[0];
 //        for(int i = 0; i <freq.length; i++) {
 
-            //If min is greater than frequency of a character
-            //then, store frequency in min and corresponding character in minChar
-//            if(min > freq[i] && freq[i] != '0') {
-//                min = freq[i];
-//                minChar = string[i];
-//            }
+
             //If max is less than frequency of a character
             //then, store frequency in max and corresponding character in maxChar
 //            if(max < freq[i]) {
@@ -76,8 +71,6 @@ public class Class25march {
 //                maxChar = string[i];
 //            }
 //        }
-//
-////        System.out.println("Minimum occurring character: " + minChar);
 //        System.out.println("Maximum occurring character: " + maxChar + " and it occurred " + max + " time");
 
 
@@ -99,7 +92,11 @@ public class Class25march {
             left[i] = 20 - howMuch[i]*price[i];
         }
 
-        System.out.println("You can buy " + howMuch[0] + " pieces of " + items[0] + " and will be left  with " );
+        for (int i = 0; i < howMuch.length; i++) {
+            System.out.println("You can buy " + howMuch[i] + " pieces of " + items[i] +
+                    " and will be left  with " + left[i] + " dollars");
+        }
+
         //Dates
         // receive the year, month and day from the user separately
         // the year should be a four-digit number.
