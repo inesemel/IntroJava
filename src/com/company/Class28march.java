@@ -111,6 +111,7 @@ public class Class28march {
                 " the bigNumber is " + bigNumber + ". The result of " +
                 bigNumber + " " +  operator1 + " " + smallNumber +
                 " is " + result(bigNumber, smallNumber, operator));
+        System.out.println(miniCalc(9, 3, '/'));
     }
 
 
@@ -135,7 +136,24 @@ public class Class28march {
         }
         return c;
     }
-    
+
+    public static double miniCalc(double smallNumber, double bigNumber, char operator){
+        double result = 0;
+        switch (operator) {
+            case '+':
+                return smallNumber + bigNumber;
+            case '-':
+                return bigNumber + smallNumber;
+            case '/':
+                return bigNumber / smallNumber;
+            case '*':
+                return bigNumber * smallNumber;
+            default:
+                System.out.println(operator + " operator is not valid");
+                return 0;
+        }
+    }
+
 
 }
 
