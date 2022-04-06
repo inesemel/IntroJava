@@ -1,4 +1,4 @@
-package com.company;
+package com.company.oop;
 
 import com.company.oop.Person;
 
