@@ -67,7 +67,7 @@ public class Class1april {
         //MERGE SORT
         // Divide the array into subarrays of about half size in each iteration/repetition
         //until each subarray repeatedly to create sorted arrays. this is going to repeat itself
-        // until we haev only one sorted array. This is the sorted array
+        // until we have only one sorted array. This is the sorted array
 
         //Recursive method
         int mid = (start + end)/2;
