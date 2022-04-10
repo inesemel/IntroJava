@@ -9,7 +9,15 @@ public class Class1aprilOOP {
 
     // Encapsulation
     //This is a concept of hiding data and methods from the outside world (Classes outside of the
-    //This allows us to control what data is given out or recieved
+    //This allows us to control what data is given out or received
+
+    //Inheritance
+    //This is a mechanism that allows us to share behaviour between classes
+    // A class that inherits from another class is called the 'child' or 'sub' class.
+    // The class that is inherited from is the 'parent' class
+
+
+    //Polymorphism
 
     // A class is a blueprint for describing an object
     // Car -> Attributes: color, model, numOfTires, numOfSeats.
