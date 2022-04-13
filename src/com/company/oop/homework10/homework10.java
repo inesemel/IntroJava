@@ -21,6 +21,13 @@ public class homework10 {
 
         Company company = new Company(employees);
         System.out.println(company.getAverageAge());
+
+        // Assuming you were assigning a task to create a roster for employees that will decide
+        // who will work the night shift based on a random basis.
+        // Write a method in your company object/class that
+        // will return a random employee, from the list of employees anytime the method is called.
+
+        System.out.println(company.getRandom());
     }
 
 }

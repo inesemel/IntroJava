@@ -1,12 +1,12 @@
 package com.company.oop.homework10;
-
-import com.company.oop.Person;
+import java.util.Random;
 
 public class Company {
     private Employee[] employees;
 
     public Company(Employee[] employees){
         this.employees = employees;
+
     }
 
     public float getAverageAge(){
@@ -20,4 +20,17 @@ public class Company {
 
         return sum / employees.length;
     }
+
+    private Random rand = new Random();
+    public Employee randomWorker(){
+        return employees[rand.nextInt(employees.length)];
+    }
+
+
+    public String getRandom(){
+        int randomIndex = (int)(Math.random() * 10);
+        if (randomIndex >= employees.length) return getRandom();
+        return employees[randomIndex].getName();
+    }
+
 }
